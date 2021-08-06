@@ -134,14 +134,12 @@
     "backendVmSize": {
        "type": "string",
        "allowedValues": [
-          "Standard_A1",
-          "Standard_D1",
           "Standard_D1_v2"
        ],
        "metadata": {
           "description": "Azure VM size for backend VMs.  Not all sizes are available in all regions."
        },
-       "defaultValue": "Standard_D1"
+       "defaultValue": "Standard_D1_v2"
     },
     "firewallModel": {
        "type": "string",
@@ -165,18 +163,17 @@
     "firewallVmSize": {
        "type": "string",
        "allowedValues": [
-          "Standard_D3",
-          "Standard_D4",
+
           "Standard_D3_v2",
           "Standard_D4_v2",
           "Standard_D5_v2",
-          "Standard_D14_v2",
-          "Standard_A4"
+          "Standard_D14_v2"
+
        ],
        "metadata": {
           "description": "Azure VM size for VM-Series"
        },
-       "defaultValue": "Standard_D3"
+       "defaultValue": "Standard_D3_v2"
     },
     "MgmtPublicIPAddressName": {
       "type": "string",
